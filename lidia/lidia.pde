@@ -1,4 +1,8 @@
-void lidia() {
+  void lidia(float posx, float posy) {
+  
+  push();
+  translate(posx,posy);
+  
   //cabell
   line(m*2, 0, m*6, 0);
   line(m*2, 0, 0, m*2);
@@ -39,4 +43,5 @@ void lidia() {
 
   //boca
   arc(m*4, m*5, m*2, m*2, radians(45), radians(105));
+  pop();
 }
